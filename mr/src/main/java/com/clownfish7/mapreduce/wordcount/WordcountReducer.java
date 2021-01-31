@@ -1,4 +1,4 @@
-package com.clownfish7.mapreduce;
+package com.clownfish7.mapreduce.wordcount;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

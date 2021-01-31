@@ -33,6 +33,10 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -48,7 +52,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.clownfish7.mapreduce.WordcountDriver</mainClass>
+                            <mainClass>com.clownfish7.mapreduce.wordcount.WordcountDriver</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

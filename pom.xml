@@ -19,6 +19,7 @@
         <hadoop.client>2.7.2</hadoop.client>
         <junit>5.7.0</junit>
         <log4j>2.14.0</log4j>
+        <lombok>1.18.16</lombok>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +42,11 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

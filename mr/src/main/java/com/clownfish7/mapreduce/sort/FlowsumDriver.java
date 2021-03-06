@@ -17,7 +17,6 @@ public class FlowsumDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
-        args = new String[]{"D:\\you\\data\\input", "D:\\you\\data\\output"};
         args = new String[]{"D:\\you\\video\\大数据\\hadoop\\flowInput", "D:\\you\\video\\大数据\\hadoop\\flowOutput"};
 
         // 1. 获取配置信息以及封装任务

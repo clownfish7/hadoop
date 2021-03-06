@@ -39,6 +39,11 @@ public class FlowsumDriver {
         FileInputFormat.setInputPaths(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
+        // 自定义 分区设置
+        job.setPartitionerClass(CustomPartition.class);
+        // 指定相对应数量的 reduce task
+        job.setNumReduceTasks(5);
+
         // 7 提交
         boolean result = job.waitForCompletion(true);
 

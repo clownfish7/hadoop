@@ -47,6 +47,10 @@ public class WordcountDriver {
         // 7 提交
         boolean result = job.waitForCompletion(true);
 
+        // 方案一 指定需要使用combiner，以及用哪个类作为combiner的逻辑
+        // 方案二 将WordcountReducer作为Combiner在WordcountDriver驱动类中指定
+        job.setCombinerClass(WordcountCombiner.class);
+
         System.exit(result ? 0 : 1);
 
     }

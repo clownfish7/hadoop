@@ -15,7 +15,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class LogDriver {
     public static void main(String[] args) throws Exception {
         // 输入输出路径需要根据自己电脑上实际的输入输出路径设置
-        args = new String[]{"D:/you/data/tableInput", "D:\\you\\data\\tableOutput"};
+        args = new String[]{"D:/you/data/logInput", "D:\\you\\data\\logOutput"};
 
         // 1. 获取配置信息以及封装任务
         Configuration configuration = new Configuration();
